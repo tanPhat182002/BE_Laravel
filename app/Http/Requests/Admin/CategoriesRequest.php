@@ -23,7 +23,7 @@ class CategoriesRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            // 'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ];
         
     }
@@ -32,8 +32,8 @@ class CategoriesRequest extends FormRequest
         return [
             'name.required' => 'Tên không được để trống',
           
-            'image.required' => 'Image không được để trống',
-            'image.image' => 'Image không đúng định dạng',
+            // 'image.required' => 'Image không được để trống',
+            // 'image.image' => 'Image không đúng định dạng',
         ];
     }
 }
